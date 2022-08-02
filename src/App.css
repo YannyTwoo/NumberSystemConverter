@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    width:100%;
+    /* box-sizing: border-box; */
+}
+body{
+    background-color: #A6D1E660;
+    display: flex;
+}
+#header{
+    color: white;
+    text-align: center;
+    background-color: #7F5283;
+    padding: 1vh 0 1vh;
+    font-size: 30px;
+}
+
+#explanation{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+#converter{
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 0.5rem;
+    max-height: 60vh;
+    justify-content: center;
+}
+@media (min-width:961px){
+    #converter{
+        padding: 3rem 0 0;
+    }
+    .card{
+        min-height: 100rem;
+    }
+}
+.card{
+    background-color: #A6D1E6;
+    border: 1px solid white;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1vh 10vh 5vh;
+    max-width: 30vh;
+    min-height: 20vh;
+    max-height: 50vh;
+
+}
+.card-head{
+    background: #7F5283;
+    padding: 0 1vh 0.5vh;
+    margin: 1rem 0 1rem;
+    border-radius: 15px;
+}
+.card h3{
+    color: #FEFBF6;
+    font-size: 5vh;
+}
+.card input{
+    font-size: 25px;
+    background-color: #FEFBF690 ;
+    border-radius: 15px;
+    height: 4vh;
+    /* padding: 0 1rem 0; */
+    text-align: center;
+    border: none;
+}
+.card-input-div{
+    justify-content: center;
+    padding: 1vh;
+}
+.card p{
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+
+
+.radbtns{
+    padding: 1vh;
+}
+
+.btn p{
+    color: #118bee;
+
+    filter: brightness(10%);
+}
+.btn p:hover{
+    filter: brightness(100%);
+}
+
+#footer{
+    position:fixed;
+    width: 100%;
+    height: 21px;
+    background-color:#7F5283 ;
+    color: white;
+    bottom: 0px;
+    text-align: center;
+    display: inline-block;
+    align-self: flex-end;
+}
